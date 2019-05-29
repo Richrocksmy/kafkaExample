@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.23squared'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.5.RELEASE'
+
+    compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.2.6.RELEASE'
+
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+}
